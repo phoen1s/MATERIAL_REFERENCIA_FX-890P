@@ -8,11 +8,10 @@ Esta sección explica el conector de 30 pines.
 　Las especificaciones del conector de 30 pines son compatibles con otras computadoras de bolsillo Casio (VX-3, VX-4, FX-870P).  
 
 
-
 Disposición de pines vista desde el frente del conector
 
 <p align="center">
-  <img src="/web/20230603012300im_/http://stear.c.ooco.jp/fx890p/30pin.gif" width="300" height="80"><br>
+  <img src="https://github.com/user-attachments/assets/df4f140b-5c02-46c6-83cf-bbcd858c5cc7" width="300" height="80"><br>
   Disposición de pines vista desde el frente del conector
 </p>
 
