@@ -71,7 +71,9 @@ La sincronización de cada línea de señal es la siguiente:
 ...Funciona de esta manera.  
 Es decir, el bus de direcciones y el bus de datos son válidos solo en el momento en que CS3 está en estado LOW y WE o OE cambian de LOW a HIGH (flanco de subida). En cualquier otro momento, su estado es indeterminado.  
 Por lo tanto, especialmente al enviar datos, puede ser necesario capturar (latch) el bus de datos en ese momento específico, dependiendo del caso.  
-Por cierto, el momento para enviar datos se obtiene mediante WE, y el momento para recibir datos se obtiene mediante OE.  <br><br>
+Por cierto, el momento para enviar datos se obtiene mediante WE, y el momento para recibir datos se obtiene mediante OE.  
+
+  
 
 **３. Entrada/Salida de Datos**  
   
