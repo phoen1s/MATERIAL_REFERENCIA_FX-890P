@@ -65,7 +65,7 @@ Por lo tanto, está bien conectar directamente las líneas de señal a circuitos
 Para mayor seguridad, es mejor tomar la alimentación desde una fuente externa.  
 La sincronización de cada línea de señal es la siguiente:  
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/abdaca9c-0972-4ee7-bc3a-ed99dd6228de" width="300" height="80"><br>
+  <img src="https://github.com/user-attachments/assets/abdaca9c-0972-4ee7-bc3a-ed99dd6228de" width="300" ><br>
   Disposición de pines vista desde el frente del conector
 </p>  
 ...Funciona de esta manera.  
@@ -74,7 +74,7 @@ Por lo tanto, especialmente al enviar datos, puede ser necesario capturar (latch
 Por cierto, el momento para enviar datos se obtiene mediante WE, y el momento para recibir datos se obtiene mediante OE.  
 
 **３. Entrada/Salida de Datos**  
-
+  
 Al manipular cada línea de señal desde un programa, básicamente se debe usar la BIOS. Específicamente, las funciones BIOS 02H, 2AH～2CH y 70H～71H están relacionadas con el conector de 30 pines.  
 
 En pocas palabras, el conector de 30 pines es una interfaz que permite intercambiar datos de 8 bits con hasta 8 circuitos externos, posee 4 líneas de entrada, 4 líneas de salida y un puerto serie.  
@@ -88,7 +88,6 @@ Las líneas de dirección y datos del conector de 30 pines están conectadas a l
 Ejemplo:  
 
 Dirección 0 del conector de 30p = Dirección de E/S &H2C0  
-
 Dirección 1 del conector de 30p = Dirección de E/S &H2C1  
 
 Para obtener datos desde E/S con comandos BASIC, se usa la instrucción INP().  
