@@ -14,7 +14,7 @@ Esta sección explica el conector de 30 pines.
 
 <div align="center">
 
-| ピン番号 | 名称 | 方向 | 説明 |
+| Número PIN | NOMBRE | DIRECCIÓN | EXPLICACIÓN |
 |----------|------|------|------|
 | １ | Vcc |  | +5V出力 |
 | ２ | PB8 | in | RS-232C DSR |
