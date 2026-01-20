@@ -9,8 +9,6 @@ Esta sección explica el conector de 30 pines.
 
 
 <blockquote>
-    <p align="center"><img src="/web/20230603012300im_/http://stear.c.ooco.jp/fx890p/30pin.gif" width="300" height="80"><br>
-    コネクタを正面から見た場合のピン配置</p>
     <div align="center"><center><table border="2" cellspacing="0" bgcolor="#FFFFFF">
         <tr>
             <td align="center" bgcolor="#C0C0C0"><font color="#000000"><strong>ピン番号</strong></font></td>
