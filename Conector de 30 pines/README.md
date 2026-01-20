@@ -15,7 +15,7 @@ Esta sección explica el conector de 30 pines.
 <div align="center">
 
 | Número PIN | Nombre | Dirección | Explicación |
-|-----------:|--------|-----------|-------------|
+|:----------:|:------:|:---------:|-------------|
 | 1  | Vcc | — | Salida de +5V |
 | 2  | PB8 | in | RS-232C DSR |
 | 3  | PB7 | in | RS-232C CD |
