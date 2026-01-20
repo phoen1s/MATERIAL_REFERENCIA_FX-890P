@@ -3,7 +3,7 @@
 　La Z-1/FX-890P tiene dos conectores para conectar circuitos externos: un conector de borde de tarjeta y un conector de 30 pines.
 Esta sección explica el conector de 30 pines.
 
-**1. Disposición de los pines** 
+**<u>1. Disposición de los pines</u>** 
 
 　Las especificaciones del conector de 30 pines son compatibles con otras computadoras de bolsillo Casio (VX-3, VX-4, FX-870P).  
 
