@@ -16,36 +16,36 @@ Esta sección explica el conector de 30 pines.
 
 | Número PIN | NOMBRE | DIRECCIÓN | EXPLICACIÓN |
 |----------|------|------|------|
-| １ | Vcc |  | +5V出力 |
+| １ | Vcc |  | SALIDA DE +5V |
 | ２ | PB8 | in | RS-232C DSR |
 | ３ | PB7 | in | RS-232C CD |
 | ４ | PB6 | in | RS-232C CTS |
-| ５ | PB5 | in | 未使用 |
-| ６ | PB4 | in | プリンタBUSY |
-| ７ | PB3 | in | 未使用 |
-| ８ | PB2 | in | 未使用 |
+| ５ | PB5 | in | NO USADO |
+| ６ | PB4 | in | IMPRESORA BUSY |
+| ７ | PB3 | in | NO USADO |
+| ８ | PB2 | in | NO USADO |
 | ９ | RXD | in | RS-232C DATA |
-| １０ | PA4 | out | INIT (LOWアクティブ) |
-| １１ | PA3 | out | STB (LOWアクティブ) |
+| １０ | PA4 | out | INIT (ACTIVO EN NIVEL LOW) |
+| １１ | PA3 | out | STB (ACTIVO EN NIVEL LOW) |
 | １２ | PA2 | out | RS-232C DTR |
 | １３ | PA1 | out | RS-232C RTS |
 | １４ | TXD | out | RS-232C DATA |
 | １５ | RST | out | RESET |
-| １６ | DB4 | in/out | データバス |
-| １７ | DB5 | in/out | データバス |
-| １８ | DB3 | in/out | データバス |
-| １９ | DB6 | in/out | データバス |
-| ２０ | DB2 | in/out | データバス |
-| ２１ | DB7 | in/out | データバス |
-| ２２ | DB1 | in/out | データバス |
-| ２３ | DB8 | in/out | データバス |
-| ２４ | A0 | out | アドレスバス |
-| ２５ | A1 | out | アドレスバス |
-| ２６ | A2 | out | アドレスバス |
+| １６ | DB4 | in/out | BUS DE DATOS |
+| １７ | DB5 | in/out | BUS DE DATOS |
+| １８ | DB3 | in/out | BUS DE DATOS |
+| １９ | DB6 | in/out | BUS DE DATOS |
+| ２０ | DB2 | in/out | BUS DE DATOS |
+| ２１ | DB7 | in/out | BUS DE DATOS |
+| ２２ | DB1 | in/out | BUS DE DATOS |
+| ２３ | DB8 | in/out | BUS DE DATOS |
+| ２４ | A0 | out | BUS DE DIRECCIONES |
+| ２５ | A1 | out | BUS DE DIRECCIONES |
+| ２６ | A2 | out | BUS DE DIRECCIONES |
 | ２７ | OE | out | OUTPUT ENABLE |
 | ２８ | WE | out | WRITE ENABLE |
-| ２９ | CS3 | out | チップセレクト3 |
-| ３０ | GND |  | グランド |
+| ２９ | CS3 | out | SELECCIÓN DE CHIP 3 |
+| ３０ | GND |  | TIERRA |
 
 </div>  
 
