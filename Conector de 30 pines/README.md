@@ -71,12 +71,11 @@ La sincronización de cada línea de señal es la siguiente:
 ...Funciona de esta manera.  
 Es decir, el bus de direcciones y el bus de datos son válidos solo en el momento en que CS3 está en estado LOW y WE o OE cambian de LOW a HIGH (flanco de subida). En cualquier otro momento, su estado es indeterminado.  
 Por lo tanto, especialmente al enviar datos, puede ser necesario capturar (latch) el bus de datos en ese momento específico, dependiendo del caso.  
-Por cierto, el momento para enviar datos se obtiene mediante WE, y el momento para recibir datos se obtiene mediante OE.  
+Por cierto, el momento para enviar datos se obtiene mediante WE, y el momento para recibir datos se obtiene mediante OE..
 
-  
+**1. Disposición de los pines**  
 
-**３. Entrada/Salida de Datos**  
-  
+　
 Al manipular cada línea de señal desde un programa, básicamente se debe usar la BIOS. Específicamente, las funciones BIOS 02H, 2AH～2CH y 70H～71H están relacionadas con el conector de 30 pines.  
 
 En pocas palabras, el conector de 30 pines es una interfaz que permite intercambiar datos de 8 bits con hasta 8 circuitos externos, posee 4 líneas de entrada, 4 líneas de salida y un puerto serie.  
