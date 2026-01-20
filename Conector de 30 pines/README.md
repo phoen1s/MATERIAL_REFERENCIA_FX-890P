@@ -60,9 +60,51 @@ Los niveles de tensión son TTL
 	•	IOL = 4 mA  
 	•	IOH = 2 mA  
   
-Por lo tanto, es posible conectar directamente circuitos integrados TTL a las líneas de señal.
-Sin embargo, si se toma la alimentación desde el pocket computer, se debe evitar aplicar una carga elevada.
-(No está muy claro hasta qué punto puede soportar carga la línea de alimentación).  
+Por lo tanto, está bien conectar directamente las líneas de señal a circuitos integrados TTL, pero si se toma la alimentación desde el lado de la Pocket Computer (calculadora de bolsillo), es necesario tener cuidado de no colocar mucha carga. (No está claro hasta qué punto la línea de alimentación puede soportar la carga...)  
 
-Para mayor seguridad, se recomienda usar una fuente de alimentación externa.  
+Para mayor seguridad, es mejor tomar la alimentación desde una fuente externa.  
+La sincronización de cada línea de señal es la siguiente:  
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/abdaca9c-0972-4ee7-bc3a-ed99dd6228de" width="300" height="80"><br>
+  Disposición de pines vista desde el frente del conector
+</p>  
+...Funciona de esta manera.  
+Es decir, el bus de direcciones y el bus de datos son válidos solo en el momento en que CS3 está en estado LOW y WE o OE cambian de LOW a HIGH (flanco de subida). En cualquier otro momento, su estado es indeterminado.  
+Por lo tanto, especialmente al enviar datos, puede ser necesario capturar (latch) el bus de datos en ese momento específico, dependiendo del caso.  
+Por cierto, el momento para enviar datos se obtiene mediante WE, y el momento para recibir datos se obtiene mediante OE.  
+
+**３. Entrada/Salida de Datos**  
+
+Al manipular cada línea de señal desde un programa, básicamente se debe usar la BIOS. Específicamente, las funciones BIOS 02H, 2AH～2CH y 70H～71H están relacionadas con el conector de 30 pines.  
+
+En pocas palabras, el conector de 30 pines es una interfaz que permite intercambiar datos de 8 bits con hasta 8 circuitos externos, posee 4 líneas de entrada, 4 líneas de salida y un puerto serie.  
+
+Si solo se conecta un circuito externo, el bus de direcciones puede ignorarse, lo que simplifica considerablemente tanto el circuito como el programa. Por ejemplo, si se ignora el bus de direcciones, cualquier dirección especificada en las funciones BIOS 70H～71H será equivalente.  
+
+(Añadido el 23/6/2011)  
+Sobre cómo acceder al conector de 30 pines desde BASIC.  
+
+Las líneas de dirección y datos del conector de 30 pines están conectadas a los puertos de E/S &H2C0 en adelante.
+Ejemplo:  
+
+Dirección 0 del conector de 30p = Dirección de E/S &H2C0  
+
+Dirección 1 del conector de 30p = Dirección de E/S &H2C1  
+
+Para obtener datos desde E/S con comandos BASIC, se usa la instrucción INP().  
+Ejemplo:  
+
+Para obtener datos de la dirección 0 del conector de 30p: A = INP(&H2C0)  
+
+Para enviar datos a E/S con comandos BASIC, se usa la instrucción OUT.  
+Ejemplo:  
+
+Para enviar el valor 12 a la dirección 0 del conector de 30p: OUT &H2C0, 12  
+
+**４. Sobre este documento**  
+
+Este documento es una reedición editada de los artículos relacionados con el conector de 30 pines publicados en «Z-1/FX-890P Katsuyō Kenkyū (Kōgakusha)».  
+
+Además, por favor, no consulte el contenido de este documento con Kōgakusha ni con CASIO.  
+
 
