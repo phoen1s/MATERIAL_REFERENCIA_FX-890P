@@ -87,18 +87,15 @@ Sobre cómo acceder al conector de 30 pines desde BASIC.
 
 Las líneas de dirección y datos del conector de 30 pines están conectadas a los puertos de E/S &H2C0 en adelante.
 Ejemplo:  
-
 Dirección 0 del conector de 30p = Dirección de E/S &H2C0  
 Dirección 1 del conector de 30p = Dirección de E/S &H2C1  
 
 Para obtener datos desde E/S con comandos BASIC, se usa la instrucción INP().  
 Ejemplo:  
-
 Para obtener datos de la dirección 0 del conector de 30p: A = INP(&H2C0)  
 
 Para enviar datos a E/S con comandos BASIC, se usa la instrucción OUT.  
 Ejemplo:  
-
 Para enviar el valor 12 a la dirección 0 del conector de 30p: OUT &H2C0, 12  
 
 **４. Sobre este documento**  
