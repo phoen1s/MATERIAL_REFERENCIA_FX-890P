@@ -85,7 +85,7 @@ Si solo se conecta un circuito externo, el bus de direcciones puede ignorarse, l
 (Añadido el 23/6/2011)  
 Sobre cómo acceder al conector de 30 pines desde BASIC.  
 
-Las líneas de dirección y datos del conector de 30 pines están conectadas a los puertos de E/S &H2C0 en adelante.
+Las líneas de dirección y datos del conector de 30 pines están conectadas a los puertos de E/S &H2C0 en adelante.  
 Ejemplo:  
 Dirección 0 del conector de 30p = Dirección de E/S &H2C0  
 Dirección 1 del conector de 30p = Dirección de E/S &H2C1  
