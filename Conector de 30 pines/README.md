@@ -14,41 +14,40 @@ Esta sección explica el conector de 30 pines.
 
 <div align="center">
 
-| Número PIN | NOMBRE | DIRECCIÓN | EXPLICACIÓN |
-|----------|------|------|------|
-| １ | Vcc |  | SALIDA DE +5V |
-| ２ | PB8 | in | RS-232C DSR |
-| ３ | PB7 | in | RS-232C CD |
-| ４ | PB6 | in | RS-232C CTS |
-| ５ | PB5 | in | NO USADO |
-| ６ | PB4 | in | IMPRESORA BUSY |
-| ７ | PB3 | in | NO USADO |
-| ８ | PB2 | in | NO USADO |
-| ９ | RXD | in | RS-232C DATA |
-| １０ | PA4 | out | INIT (ACTIVO EN NIVEL LOW) |
-| １１ | PA3 | out | STB (ACTIVO EN NIVEL LOW) |
-| １２ | PA2 | out | RS-232C DTR |
-| １３ | PA1 | out | RS-232C RTS |
-| １４ | TXD | out | RS-232C DATA |
-| １５ | RST | out | RESET |
-| １６ | DB4 | in/out | BUS DE DATOS |
-| １７ | DB5 | in/out | BUS DE DATOS |
-| １８ | DB3 | in/out | BUS DE DATOS |
-| １９ | DB6 | in/out | BUS DE DATOS |
-| ２０ | DB2 | in/out | BUS DE DATOS |
-| ２１ | DB7 | in/out | BUS DE DATOS |
-| ２２ | DB1 | in/out | BUS DE DATOS |
-| ２３ | DB8 | in/out | BUS DE DATOS |
-| ２４ | A0 | out | BUS DE DIRECCIONES |
-| ２５ | A1 | out | BUS DE DIRECCIONES |
-| ２６ | A2 | out | BUS DE DIRECCIONES |
-| ２７ | OE | out | OUTPUT ENABLE |
-| ２８ | WE | out | WRITE ENABLE |
-| ２９ | CS3 | out | SELECCIÓN DE CHIP 3 |
-| ３０ | GND |  | TIERRA |
+| Número PIN | Nombre | Dirección | Explicación |
+|-----------:|--------|-----------|-------------|
+| 1  | Vcc | — | Salida de +5V |
+| 2  | PB8 | in | RS-232C DSR |
+| 3  | PB7 | in | RS-232C CD |
+| 4  | PB6 | in | RS-232C CTS |
+| 5  | PB5 | in | No usado |
+| 6  | PB4 | in | Impresora BUSY |
+| 7  | PB3 | in | No usado |
+| 8  | PB2 | in | No usado |
+| 9  | RXD | in | RS-232C DATA |
+| 10 | PA4 | out | INIT (activo en nivel bajo) |
+| 11 | PA3 | out | STB (activo en nivel bajo) |
+| 12 | PA2 | out | RS-232C DTR |
+| 13 | PA1 | out | RS-232C RTS |
+| 14 | TXD | out | RS-232C DATA |
+| 15 | RST | out | RESET |
+| 16 | DB4 | in/out | Bus de datos |
+| 17 | DB5 | in/out | Bus de datos |
+| 18 | DB3 | in/out | Bus de datos |
+| 19 | DB6 | in/out | Bus de datos |
+| 20 | DB2 | in/out | Bus de datos |
+| 21 | DB7 | in/out | Bus de datos |
+| 22 | DB1 | in/out | Bus de datos |
+| 23 | DB8 | in/out | Bus de datos |
+| 24 | A0  | out | Bus de direcciones |
+| 25 | A1  | out | Bus de direcciones |
+| 26 | A2  | out | Bus de direcciones |
+| 27 | OE  | out | Output Enable |
+| 28 | WE  | out | Write Enable |
+| 29 | CS3 | out | Selección de chip 3 |
+| 30 | GND | — | Tierra |
 
-</div>  
-
+</div>
 ※ La dirección in/out indica el sentido de la señal visto desde el pocket computer.  
 
 
