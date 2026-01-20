@@ -47,4 +47,22 @@ Esta sección explica el conector de 30 pines.
 | ２９ | CS3 | out | チップセレクト3 |
 | ３０ | GND |  | グランド |
 
-</div>
+</div>  
+
+※ La dirección in/out indica el sentido de la señal visto desde el pocket computer.  
+
+
+**2. Características eléctricas**  
+
+Los niveles de tensión son TTL  
+(HI = 5V / LOW = 0V)  
+	•	Corriente permitida:  
+	•	IOL = 4 mA  
+	•	IOH = 2 mA  
+  
+Por lo tanto, es posible conectar directamente circuitos integrados TTL a las líneas de señal.
+Sin embargo, si se toma la alimentación desde el pocket computer, se debe evitar aplicar una carga elevada.
+(No está muy claro hasta qué punto puede soportar carga la línea de alimentación).  
+
+Para mayor seguridad, se recomienda usar una fuente de alimentación externa.  
+
