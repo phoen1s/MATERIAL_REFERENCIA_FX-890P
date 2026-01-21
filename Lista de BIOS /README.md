@@ -297,7 +297,7 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     <tr>
       <td valign="top"  width="33" align="right">Entrada</td>
       <td valign="top">:</td>
-      <td><pre>AH=06H
+      <td>AH=06H<pre>
       BL=b7 b6 b5 b4 b3 b2 b1 b0
           │  │  │  │  └──┴──┴──┴- Velocidad (baudrate)
           │  │  │  │　　　　　　　　 0 0 0 0 : 75bps
