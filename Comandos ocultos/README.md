@@ -1,4 +1,4 @@
-<p align="center"><font size="7">Comandos Ocultos de BASIC</font></p>
+## Comandos Ocultos de BASIC
 
 <hr>
 
