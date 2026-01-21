@@ -137,4 +137,14 @@ La matriz de teclas está conectada a los puertos de E/S.
 | **KI9**  |     |     |     |     |     |     |     | ↵   | -   | BS   | tan  |     |
 | **KIS**  |     |     |     |     |     |     |     |     |     |     |      | SHIFT | 
 
+## ３．Método de Operación
 
+El procedimiento para leer la matriz de teclas es:
+
+1. Deshabilitar la interrupción de entrada de teclas.
+2. Establecer (a 1) el bit KO correspondiente a la tecla que se desea leer y enviarlo al KO port mediante OUT.
+3. Esperar un tiempo determinado.
+4. Leer el KI port mediante IN. El bit KI correspondiente a la tecla presionada se establecerá en 1.
+5. Operar el KEYCTL para inicializar (borrar) el flag de interrupción.
+
+Por ejemplo, para verificar si la tecla "G" está presionada:
