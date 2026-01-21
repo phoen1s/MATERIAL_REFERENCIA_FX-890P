@@ -303,23 +303,23 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
           │  │  │  │  └--┴--┴--┴- Velocidad (baudrate)
           │  │  │  │　　　　　　　　 0 0 0 0 : 75bps
           │  │  │  │　　　　　　　　 0 0 0 1 : 150bps
-          │  │  │  │　　　　　　　　 0 0 1 0 : 300bps<br>
-          │  │  │  │　　　　　　　　 0 0 1 1 : 600bps<br>
-          │  │  │  │　　　　　　　　 0 1 0 0 : 1200bps<br>
-          │  │  │  │　　　　　　　　 0 1 0 1 : 2400bps<br>
-          │  │  │  │　　　　　　　　 0 1 1 0 : 4800bps<br>
-          │  │  │  │　　　　　　　　 0 1 1 1 : 9600bps<br>
-          │  │  │  │　　　　　　　　 1 0 0 0 : 19200bps<br>
-          │  │  │  └─────── Paridad　 (0:EVEN / 1:ODD )<br>
-          │  └────────- Paridad　 (0:ON / 1:OFF )<br>
-          │  └────────── Bits de stop (0:1 bit / 1:2 bits)<br>
-          └───────────- Longitud de datos (0:8 bits / 1:7 bits)<br>
-      BH=b7 b6 b5 b4 b3 b2 b1 b0<br>
-      　　　　　　│ │ │ │ └─ SI/SO　　(0:no controlar / 1:controlar)<br>
-      　　　　　　│ │ │ └──- Xon/Xoff (0:no controlar / 1:controlar)<br>
-      　　　　　　│ │ └──── CTS　　　(0:no verificar / 1:verificar)<br>
-      　　　　　　│ └─────- CD　　　 (0:no verificar / 1:verificar)<br>
-      　　　　　　└─────── DSR　　　(0:no verificar / 1:verificar)</td>
+          │  │  │  │　　　　　　　　 0 0 1 0 : 300bps
+          │  │  │  │　　　　　　　　 0 0 1 1 : 600bps
+          │  │  │  │　　　　　　　　 0 1 0 0 : 1200bps
+          │  │  │  │　　　　　　　　 0 1 0 1 : 2400bps
+          │  │  │  │　　　　　　　　 0 1 1 0 : 4800bps
+          │  │  │  │　　　　　　　　 0 1 1 1 : 9600bps
+          │  │  │  │　　　　　　　　 1 0 0 0 : 19200bps
+          │  │  │  └─────── Paridad　 (0:EVEN / 1:ODD )
+          │  └────────- Paridad　 (0:ON / 1:OFF )
+          │  └────────── Bits de stop (0:1 bit / 1:2 bits)
+          └───────────- Longitud de datos (0:8 bits / 1:7 bits)
+      BH=b7 b6 b5 b4 b3 b2 b1 b0
+      　　　　　　│ │ │ │ └─ SI/SO　　(0:no controlar / 1:controlar)
+      　　　　　　│ │ │ └──- Xon/Xoff (0:no controlar / 1:controlar)
+      　　　　　　│ │ └──── CTS　　　(0:no verificar / 1:verificar)
+      　　　　　　│ └─────- CD　　　 (0:no verificar / 1:verificar)
+      　　　　　　└─────── DSR　　　(0:no verificar / 1:verificar)
         </pre>
     </tr>
     <tr>
