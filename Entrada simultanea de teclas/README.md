@@ -6,7 +6,7 @@ Además, en este documento se asume como condición previa un conocimiento bási
 La forma más sencilla de manejar la entrada de teclas desde ensamblador es usar la BIOS. Sin embargo, el proceso de entrada de teclas de la BIOS obtiene datos del búfer de teclas, por lo que no puede manejar situaciones como presionar múltiples teclas simultáneamente o conocer en qué momento exacto se presiona una tecla.  
 Para hacer posible esto, es necesario verificar directamente el estado de la matriz de teclas. Aquí se explica el método para manejar la matriz de teclas desde ensamblador.  
 
-## TPuertos de Teclado
+## 1.Puertos de Teclado
 
 La matriz de teclas está conectada a los puertos de E/S.
 
