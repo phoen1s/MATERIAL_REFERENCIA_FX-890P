@@ -248,3 +248,9 @@ AL = Estado de la tecla（0:OFF 1:ON）
     </tr>
   </tbody>
 </table>
+
+##４．Sobre este documento
+
+Este documento se ha elaborado tomando como referencia «Z-1/FX-890P Katsuyō Kenkyū (Kōgakusha)» [Estudio y Aplicación de la Z-1/FX-890P (Editorial Kōgakusha)], corrigiendo algunos errores presentes en la obra original y añadiendo varias notas complementarias.
+
+Además, por favor, no consulte el contenido de este documento con Kōgakusha ni con CASIO.
