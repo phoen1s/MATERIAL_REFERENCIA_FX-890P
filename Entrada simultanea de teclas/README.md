@@ -14,9 +14,9 @@ Para hacer posible esto, es necesario verificar directamente el estado de la mat
 
 | Dirección | Contenido |
 |-----------|-----------|
-| **0200H** | **KO port (Key Out)**<br><br>**Desglose de bits:**<br><br>`b15` | `b14` | `b13` | `b12` | `b11` | `b10` | `b9` | `b8` | `b7` | `b6` | `b5` | `b4` | `b3` | `b2` | `b1` | `b0`<br>--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---<br>- | - | - | DATA | KOS | KO10 | KO9 | KO8 | KO7 | KO6 | KO5 | KO4 | KO3 | KO2 | KO1 | KO0 |
-| **0202H** | **KI port (Key In)**<br><br>**Desglose de bits:**<br><br>`b15` | `b14` | `b13` | `b12` | `b11` | `b10` | `b9` | `b8` | `b7` | `b6` | `b5` | `b4` | `b3` | `b2` | `b1` | `b0`<br>--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---<br>KINT | SW | 0 | 0 | KIS | 0 | KI9 | KI8 | KI7 | KI6 | KI5 | KI4 | KI3 | KI2 | KI1 | KI0 |
-| **0204H** | **KEYCTL**<br>b0: 0 = interrupción de teclado deshabilitada<br>b1: 1→0 = borrar interrupción de teclado |
+| **0200H** | **KO port (Key Out)**<br><br>**Bits:**<br>`b15` | `b14` | `b13` | `b12` | `b11` | `b10` | `b9` | `b8` | `b7` | `b6` | `b5` | `b4` | `b3` | `b2` | `b1` | `b0`<br>--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---<br>- | - | - | DATA | KOS | KO10 | KO9 | KO8 | KO7 | KO6 | KO5 | KO4 | KO3 | KO2 | KO1 | KO0 |
+| **0202H** | **KI port (Key In)**<br><br>**Bits:**<br>`b15` | `b14` | `b13` | `b12` | `b11` | `b10` | `b9` | `b8` | `b7` | `b6` | `b5` | `b4` | `b3` | `b2` | `b1` | `b0`<br>--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---<br>KINT | SW | 0 | 0 | KIS | 0 | KI9 | KI8 | KI7 | KI6 | KI5 | KI4 | KI3 | KI2 | KI1 | KI0 |
+| **0204H** | **KEYCTL**<br>• b0=0: Interrupción de teclado deshabilitada<br>• b1: 1→0 = Borrar interrupción de teclado |
 
 ## <u>２．Matriz de Teclas</u>
 
