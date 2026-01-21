@@ -15,8 +15,8 @@ Para hacer posible esto, es necesario verificar directamente el estado de la mat
 <table border="1" style="background-color: #999999; border-collapse: collapse; margin: 20px 0;">
   <tbody>
     <tr>
-      <th style="padding: 4px; text-align: center;">アドレス</th>
-      <th style="padding: 4px; text-align: center;">内容</th>
+      <th style="padding: 4px; text-align: center;">DIRECCIÓN</th>
+      <th style="padding: 4px; text-align: center;">CONTENIDO</th>
     </tr>
     <tr>
       <td style="padding: 4px; text-align: center;">0200H</td>
