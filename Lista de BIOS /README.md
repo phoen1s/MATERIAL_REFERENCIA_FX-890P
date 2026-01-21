@@ -300,7 +300,7 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       <td>AH=06H<br>
         <pre>
       BL=b7 b6 b5 b4 b3 b2 b1 b0
-          │  │  │  │  └--┴--┴--┴- Velocidad (baudrate)
+          │  │  │  │  └──┴──┴──┴- Velocidad (baudrate)
           │  │  │  │　　　　　　　　 0 0 0 0 : 75bps
           │  │  │  │　　　　　　　　 0 0 0 1 : 150bps
           │  │  │  │　　　　　　　　 0 0 1 0 : 300bps
@@ -311,15 +311,15 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
           │  │  │  │　　　　　　　　 0 1 1 1 : 9600bps
           │  │  │  │　　　　　　　　 1 0 0 0 : 19200bps
           │  │  │  └─────── Paridad　 (0:EVEN / 1:ODD )
-          │  └────────- Paridad　 (0:ON / 1:OFF )
-          │  └────────── Bits de stop (0:1 bit / 1:2 bits)
-          └───────────- Longitud de datos (0:8 bits / 1:7 bits)
+          │  │  └────────── Paridad　 (0:ON / 1:OFF )
+          │  └───────────── Bits de stop (0:1 bit / 1:2 bits)
+          └──────────────── Longitud de datos (0:8 bits / 1:7 bits)
       BH=b7 b6 b5 b4 b3 b2 b1 b0
-      　　　　　　│ │ │ │ └─ SI/SO　　(0:no controlar / 1:controlar)
-      　　　　　　│ │ │ └──- Xon/Xoff (0:no controlar / 1:controlar)
-      　　　　　　│ │ └──── CTS　　　(0:no verificar / 1:verificar)
-      　　　　　　│ └─────- CD　　　 (0:no verificar / 1:verificar)
-      　　　　　　└─────── DSR　　　(0:no verificar / 1:verificar)
+      　　　　　   　│  │  │  │  └─ SI/SO　　(0:no controlar / 1:controlar)
+      　　   　　　　│  │  │  └───- Xon/Xoff (0:no controlar / 1:controlar)
+      　　　   　　　│  │  └─────── CTS　　　(0:no verificar / 1:verificar)
+      　   　　　　　│  └─────────- CD　　　 (0:no verificar / 1:verificar)
+         　　　　　　└───────────── DSR　　　(0:no verificar / 1:verificar)
         </pre>
     </tr>
     <tr>
