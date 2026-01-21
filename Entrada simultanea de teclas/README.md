@@ -12,11 +12,116 @@ Para hacer posible esto, es necesario verificar directamente el estado de la mat
 
 ## Tabla de Puertos de E/S
 
-| Dirección | Contenido |
-|-----------|-----------|
-| **0200H** | **KO port (Key Out)**<br><br>**Bits:**<br>`b15` | `b14` | `b13` | `b12` | `b11` | `b10` | `b9` | `b8` | `b7` | `b6` | `b5` | `b4` | `b3` | `b2` | `b1` | `b0`<br>--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---<br>- | - | - | DATA | KOS | KO10 | KO9 | KO8 | KO7 | KO6 | KO5 | KO4 | KO3 | KO2 | KO1 | KO0 |
-| **0202H** | **KI port (Key In)**<br><br>**Bits:**<br>`b15` | `b14` | `b13` | `b12` | `b11` | `b10` | `b9` | `b8` | `b7` | `b6` | `b5` | `b4` | `b3` | `b2` | `b1` | `b0`<br>--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---<br>KINT | SW | 0 | 0 | KIS | 0 | KI9 | KI8 | KI7 | KI6 | KI5 | KI4 | KI3 | KI2 | KI1 | KI0 |
-| **0204H** | **KEYCTL**<br>• b0=0: Interrupción de teclado deshabilitada<br>• b1: 1→0 = Borrar interrupción de teclado |
+<table border="1" style="background-color: #999999; border-collapse: collapse; margin: 20px 0;">
+  <tbody>
+    <tr>
+      <th style="padding: 4px; text-align: center;">アドレス</th>
+      <th style="padding: 4px; text-align: center;">内容</th>
+    </tr>
+    <tr>
+      <td style="padding: 4px; text-align: center;">0200H</td>
+      <td style="padding: 4px;">
+        KO port (Key Out)<br>
+        <div style="text-align: center;">
+        <table cellspacing="0" style="background-color: #999999; border: 1px solid; border-collapse: collapse; margin: 8px auto;">
+          <tbody align="center">
+            <tr>
+              <th style="padding: 2px;">b15</th>
+              <th style="padding: 2px;">b14</th>
+              <th style="padding: 2px;">b13</th>
+              <th style="padding: 2px;">b12</th>
+              <th style="padding: 2px;">b11</th>
+              <th style="padding: 2px;">b10</th>
+              <th style="padding: 2px;">b9</th>
+              <th style="padding: 2px;">b8</th>
+              <th style="padding: 2px;">b7</th>
+              <th style="padding: 2px;">b6</th>
+              <th style="padding: 2px;">b5</th>
+              <th style="padding: 2px;">b4</th>
+              <th style="padding: 2px;">b3</th>
+              <th style="padding: 2px;">b2</th>
+              <th style="padding: 2px;">b1</th>
+              <th style="padding: 2px;">b0</th>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">-</td>
+              <td style="padding: 2px;">-</td>
+              <td style="padding: 2px;">-</td>
+              <td style="padding: 2px;">DATA</td>
+              <td style="padding: 2px;">KOS</td>
+              <td style="padding: 2px;">KO10</td>
+              <td style="padding: 2px;">KO9</td>
+              <td style="padding: 2px;">KO8</td>
+              <td style="padding: 2px;">KO7</td>
+              <td style="padding: 2px;">KO6</td>
+              <td style="padding: 2px;">KO5</td>
+              <td style="padding: 2px;">KO4</td>
+              <td style="padding: 2px;">KO3</td>
+              <td style="padding: 2px;">KO2</td>
+              <td style="padding: 2px;">KO1</td>
+              <td style="padding: 2px;">KO0</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; text-align: center;">0202H</td>
+      <td style="padding: 4px;">
+        KI port (Key In)<br>
+        <table cellspacing="0" style="background-color: #999999; border: 1px solid; border-collapse: collapse; margin: 8px auto;">
+          <tbody align="center">
+            <tr>
+              <th style="padding: 2px;">b15</th>
+              <th style="padding: 2px;">b14</th>
+              <th style="padding: 2px;">b13</th>
+              <th style="padding: 2px;">b12</th>
+              <th style="padding: 2px;">b11</th>
+              <th style="padding: 2px;">b10</th>
+              <th style="padding: 2px;">b9</th>
+              <th style="padding: 2px;">b8</th>
+              <th style="padding: 2px;">b7</th>
+              <th style="padding: 2px;">b6</th>
+              <th style="padding: 2px;">b5</th>
+              <th style="padding: 2px;">b4</th>
+              <th style="padding: 2px;">b3</th>
+              <th style="padding: 2px;">b2</th>
+              <th style="padding: 2px;">b1</th>
+              <th style="padding: 2px;">b0</th>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">KINT</td>
+              <td style="padding: 2px;">SW</td>
+              <td style="padding: 2px;">0</td>
+              <td style="padding: 2px;">0</td>
+              <td style="padding: 2px;">KIS</td>
+              <td style="padding: 2px;">0</td>
+              <td style="padding: 2px;">KI9</td>
+              <td style="padding: 2px;">KI8</td>
+              <td style="padding: 2px;">KI7</td>
+              <td style="padding: 2px;">KI6</td>
+              <td style="padding: 2px;">KI5</td>
+              <td style="padding: 2px;">KI4</td>
+              <td style="padding: 2px;">KI3</td>
+              <td style="padding: 2px;">KI2</td>
+              <td style="padding: 2px;">KI1</td>
+              <td style="padding: 2px;">KI0</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; text-align: center;">0204H</td>
+      <td style="padding: 4px;">
+        KEYCTL<br>
+        b0 0のときキー割り込み禁止<br>
+        b1 1→0でキー割り込みクリア
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## <u>２．Matriz de Teclas</u>
 
