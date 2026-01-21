@@ -298,21 +298,21 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       <td valign="top" width="33" align="right">Entrada</td>
       <td valign="top">:</td>
       <td>AH=06H<br>
-      BL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-      　 │ │ │ │ └-┴-┴-┴- Velocidad (baudrate)<br>
-      　 │ │ │ │　　　　　　　　 0 0 0 0 : 75bps<br>
-      　 │ │ │ │　　　　　　　　 0 0 0 1 : 150bps<br>
-      　 │ │ │ │　　　　　　　　 0 0 1 0 : 300bps<br>
-      　 │ │ │ │　　　　　　　　 0 0 1 1 : 600bps<br>
-      　 │ │ │ │　　　　　　　　 0 1 0 0 : 1200bps<br>
-      　 │ │ │ │　　　　　　　　 0 1 0 1 : 2400bps<br>
-      　 │ │ │ │　　　　　　　　 0 1 1 0 : 4800bps<br>
-      　 │ │ │ │　　　　　　　　 0 1 1 1 : 9600bps<br>
-      　 │ │ │ │　　　　　　　　 1 0 0 0 : 19200bps<br>
-      　 │ │ │ └─────── Paridad　 (0:EVEN / 1:ODD )<br>
-      　 │ │ └────────- Paridad　 (0:ON / 1:OFF )<br>
-      　 │ └────────── Bits de stop (0:1 bit / 1:2 bits)<br>
-      　 └───────────- Longitud de datos (0:8 bits / 1:7 bits)<br>
+      BL=b7 b6 b5 b4 b3 b2 b1 b0  
+          │ │ │ │ └-┴-┴-┴- Velocidad (baudrate)  
+       　 │ │ │ │　　　　　　　　 0 0 0 0 : 75bps<br>
+       　 │ │ │ │　　　　　　　　 0 0 0 1 : 150bps<br>
+       　 │ │ │ │　　　　　　　　 0 0 1 0 : 300bps<br>
+       　 │ │ │ │　　　　　　　　 0 0 1 1 : 600bps<br>
+       　 │ │ │ │　　　　　　　　 0 1 0 0 : 1200bps<br>
+       　 │ │ │ │　　　　　　　　 0 1 0 1 : 2400bps<br>
+       　 │ │ │ │　　　　　　　　 0 1 1 0 : 4800bps<br>
+       　 │ │ │ │　　　　　　　　 0 1 1 1 : 9600bps<br>
+       　 │ │ │ │　　　　　　　　 1 0 0 0 : 19200bps<br>
+       　 │ │ │ └─────── Paridad　 (0:EVEN / 1:ODD )<br>
+       　 │ │ └────────- Paridad　 (0:ON / 1:OFF )<br>
+       　 │ └────────── Bits de stop (0:1 bit / 1:2 bits)<br>
+       　 └───────────- Longitud de datos (0:8 bits / 1:7 bits)<br>
       BH=b7 b6 b5 b4 b3 b2 b1 b0<br>
       　　　　　　│ │ │ │ └─ SI/SO　　(0:no controlar / 1:controlar)<br>
       　　　　　　│ │ │ └──- Xon/Xoff (0:no controlar / 1:controlar)<br>
