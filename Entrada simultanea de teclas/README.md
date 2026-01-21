@@ -147,4 +147,78 @@ El procedimiento para leer la matriz de teclas es:
 4. Leer el KI port mediante IN. El bit KI correspondiente a la tecla presionada se establecerá en 1.
 5. Operar el KEYCTL para inicializar (borrar) el flag de interrupción.
 
-Por ejemplo, para verificar si la tecla "G" está presionada:
+Por ejemplo, para verificar si la tecla "G" está presionada:  
+
+<table border="1" style="width: 400px; border-collapse: collapse; margin: 20px 0; background-color: #999999;">
+  <tbody>
+    <tr>
+      <td style="padding: 10px; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.4;">
+        <span style="color: #0000FF;">KOUT EQU 200H</span><br>
+        <span style="color: #0000FF;">KIN   EQU 202H</span><br>
+        <span style="color: #0000FF;">KCTL  EQU 204H</span><br>
+        <br>
+        <span style="color: #008000; font-weight: bold;">INKEY:</span><br>
+        　<span style="color: #0000FF;">PUSH SI</span><br>
+        　<span style="color: #0000FF;">PUSH DX</span><br>
+        　<span style="color: #0000FF;">PUSH CX</span><br>
+        　<span style="color: #0000FF;">PUSH BX</span><br>
+        　<span style="color: #0000FF;">CLI</span><br>
+        　<span style="color: #0000FF;">MOV DX,KOUT</span><br>
+        　<span style="color: #0000FF;">MOV AX,1FFFH</span><br>
+        　<span style="color: #0000FF;">OUT DX,AX</span><br>
+        　<span style="color: #0000FF;">XOR AX,AX</span><br>
+        　<span style="color: #0000FF;">OUT DX,AX</span><br>
+        　<span style="color: #0000FF;">MOV CX,8</span><br>
+        　<span style="color: #0000FF;">MOV SI,OFFSET KDATA</span><br>
+        <span style="color: #008000; font-weight: bold;">INLP1:</span><br>
+        　<span style="color: #0000FF;">MOV AX,[SI]</span><br>
+        　<span style="color: #0000FF;">ADD SI,2</span><br>
+        　<span style="color: #0000FF;">MOV BX,[SI]</span><br>
+        　<span style="color: #0000FF;">ADD SI,2</span><br>
+        　<span style="color: #0000FF;">CALL KSUB</span><br>
+        　<span style="color: #0000FF;">DEC CL</span><br>
+        　<span style="color: #0000FF;">JNZ INLP1</span><br>
+        　<span style="color: #0000FF;">MOV AX,7FFH</span><br>
+        　<span style="color: #0000FF;">OUT DX,AX</span><br>
+        　<span style="color: #0000FF;">CALL WAIT</span><br>
+        　<span style="color: #0000FF;">MOV DX,KCTL</span><br>
+        　<span style="color: #0000FF;">MOV AL,3</span><br>
+        　<span style="color: #0000FF;">OUT DX,AL</span><br>
+        　<span style="color: #0000FF;">DEC AL</span><br>
+        　<span style="color: #0000FF;">OUT DX,AL</span><br>
+        　<span style="color: #0000FF;">MOV AL,CH</span><br>
+        　<span style="color: #0000FF;">STI</span><br>
+        　<span style="color: #0000FF;">POP BX</span><br>
+        　<span style="color: #0000FF;">POP CX</span><br>
+        　<span style="color: #0000FF;">POP DX</span><br>
+        　<span style="color: #0000FF;">POP SI</span><br>
+        <span style="color: #008000; font-weight: bold;">WAIT:</span><br>
+        　<span style="color: #0000FF;">RET</span><br>
+        <br>
+        <span style="color: #008000; font-weight: bold;">KSUB:</span><br>
+        　<span style="color: #0000FF;">OUT DX,AX</span><br>
+        　<span style="color: #0000FF;">CALL WAIT</span><br>
+        　<span style="color: #0000FF;">MOV DX,KIN</span><br>
+        　<span style="color: #0000FF;">IN AX,DX</span><br>
+        　<span style="color: #0000FF;">MOV DX,KOUT</span><br>
+        　<span style="color: #0000FF;">TEST AX,BX</span><br>
+        　<span style="color: #0000FF;">JZ KSJP1</span><br>
+        　<span style="color: #0000FF;">STC</span><br>
+        <span style="color: #008000; font-weight: bold;">KSJP1:</span><br>
+        　<span style="color: #0000FF;">RCR CH,1</span><br>
+        　<span style="color: #0000FF;">RET</span><br>
+        <br>
+        <span style="color: #008000; font-weight: bold;">KDATA:</span><br>
+        　<span style="color: #0000FF;">DW 100H,040H</span> <span style="color: #FF0000;">#2</span><br>
+        　<span style="color: #0000FF;">DW 080H,020H</span> <span style="color: #FF0000;">#4</span><br>
+        　<span style="color: #0000FF;">DW 200H,040H</span> <span style="color: #FF0000;">#6</span><br>
+        　<span style="color: #0000FF;">DW 100H,010H</span> <span style="color: #FF0000;">#8</span><br>
+        　<span style="color: #0000FF;">DW 010H,080H</span> <span style="color: #FF0000;">#SPACE</span><br>
+        　<span style="color: #0000FF;">DW 800H,800H</span> <span style="color: #FF0000;">#SHIFT</span><br>
+        　<span style="color: #0000FF;">DW 080H,200H</span> <span style="color: #FF0000;">#↵</span><br>
+        　<span style="color: #0000FF;">DW 001H,001H</span> <span style="color: #FF0000;">#BRK</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
