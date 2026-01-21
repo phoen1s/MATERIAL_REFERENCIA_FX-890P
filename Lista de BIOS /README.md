@@ -666,7 +666,7 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     <tr>
       <td valign="top" width="33" align="right">Entrada</td>
       <td valign="top">:</td>
-      <td>AH=13H<br>
+      <td>AH=13H
          <pre>
       BL=Coordenada X inicial (00H～BFH)
       BH=Coordenada Y inicial (00H～3FH)
@@ -705,13 +705,12 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     <tr>
       <td valign="top" width="33" align="right">Entrada</td>
       <td valign="top">:</td>
-      <td>AH=14H<br>
-      BL=Coordenada X inicial (00H～BFH)<br>
-      BH=Coordenada Y inicial (00H～3FH)<br>
-      CL=Coordenada X final (00H～BFH)<br>
-      DH=Coordenada Y final (00H～3FH)<br>
-      DL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-         <pre>
+      <td>AH=14H<pre>
+      BL=Coordenada X inicial (00H～BFH)
+      BH=Coordenada Y inicial (00H～3FH)
+      CL=Coordenada X final (00H～BFH)
+      DH=Coordenada Y final (00H～3FH)
+      DL=b7 b6 b5 b4 b3 b2 b1 b0
        　 │  └───────── 0:Dibujar rectángulo 1:Borrar rectángulo
        　 └───────────- 0:Mostrar en LCD 1:No mostrar en LCD
          </pre>
@@ -744,12 +743,11 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     <tr>
       <td valign="top" width="33" align="right">Entrada</td>
       <td valign="top">:</td>
-      <td valign="top">AH=15H<br>
-      BL=Coordenada X del centro (00H～BFH)<br>
-      BH=Coordenada Y del centro (00H～3FH)<br>
-      CL=Radio (01H～BFH)<br>
-      DL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-         <pre>
+      <td valign="top">AH=15H <pre>
+      BL=Coordenada X del centro (00H～BFH)
+      BH=Coordenada Y del centro (00H～3FH)
+      CL=Radio (01H～BFH)
+      DL=b7 b6 b5 b4 b3 b2 b1 b0
        　 │  └──-─-─-─- 0:Dibujar círculo 1:Borrar círculo
        　 └───────────- 0:Mostrar en LCD 1:No mostrar en LCD
          </pre>
@@ -1110,9 +1108,8 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     <tr>
       <td valign="top" width="33" align="right">Entrada</td>
       <td valign="top">:</td>
-      <td>AH=2AH<br>
-      BL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-        <pre>
+      <td>AH=2AH <pre>
+      BL=b7 b6 b5 b4 b3 b2 b1 b0
       　　　   　　　　 │  │  │  └─ INIT
       　　　　　　   　 │  │  └───- STB
       　　　　　   　　 │  └─────── RTS
@@ -1146,9 +1143,8 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     <tr>
       <td valign="top" width="33" align="right">Entrada</td>
       <td valign="top">:</td>
-      <td>AH=2BH<br>
-      BL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-        <pre>
+      <td>AH=2BH <pre>
+      BL=b7 b6 b5 b4 b3 b2 b1 b0
       　　　　　　   　 │  │  │  └─ INIT
       　　　　　   　　 │  │  └──-- STB
       　　　　   　　　 │  └─---─── RTS
@@ -1187,8 +1183,7 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     <tr>
       <td valign="top" width="33" align="right">Salida</td>
       <td valign="top">:</td>
-      <td>BL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-         <pre>
+      <td><pre>BL=b7 b6 b5 b4 b3 b2 b1 b0    
            　 │  │  │  │  │  │  │  └─ BUSY
       　      │  │  │  │  │  │  └───- CD
       　      │  │  │  │  │  └───-─── DSR
