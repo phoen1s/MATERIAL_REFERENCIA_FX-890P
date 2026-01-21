@@ -1,11 +1,9 @@
 # Lista de BIOS (versión resumida)
 
-<hr>
 <p>Este documento presenta las funciones de la BIOS incorporada en la Z-1/FX-890P. Esta documentación es necesaria al programar en ensamblador.<br>
 Además, en este documento se asume como condición previa un conocimiento básico del ensamblador 8086 para su explicación. Por lo tanto, sería prudente que quienes se pregunten "¿qué es el ensamblador?" no continúen leyendo más allá.<br>
 <br>
 Originalmente, la BIOS incorporada en la Z-1/FX-890P contiene más de 180 funciones, pero aquí se presentan aquellas seleccionadas por su alto valor de uso.<br>
-<br>
 <br>
 ※Nota: Este documento está basado en material para la Z-1/FX-890P, por lo que no necesariamente todas las funciones aquí descritas serán válidas para la Z-1GR.<br>
 ...aunque probablemente las funciones que se presentarán a continuación no hayan sido modificadas.<br>
