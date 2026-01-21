@@ -299,10 +299,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       <td valign="top">:</td>
       <td>AH=06H<br>
         <pre>
-      BL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-          │  │  │  │  └--┴--┴--┴- Velocidad (baudrate)<br>
-          │  │  │  │　　　　　　　　 0 0 0 0 : 75bps<br>
-          │  │  │  │　　　　　　　　 0 0 0 1 : 150bps<br>
+      BL=b7 b6 b5 b4 b3 b2 b1 b0
+          │  │  │  │  └--┴--┴--┴- Velocidad (baudrate)
+          │  │  │  │　　　　　　　　 0 0 0 0 : 75bps
+          │  │  │  │　　　　　　　　 0 0 0 1 : 150bps
           │  │  │  │　　　　　　　　 0 0 1 0 : 300bps<br>
           │  │  │  │　　　　　　　　 0 0 1 1 : 600bps<br>
           │  │  │  │　　　　　　　　 0 1 0 0 : 1200bps<br>
