@@ -2,8 +2,8 @@
 
 <hr>
 
-<p><font face="ＭＳ ゴシック">　Existen varios comandos en la Z-1/FX-890P que no están documentados en el manual.<br>
-Aquí presentamos esos comandos ocultos.</font></p>
+　Existen varios comandos en la Z-1/FX-890P que no están documentados en el manual.<br>
+Aquí presentamos esos comandos ocultos.
 
 <p><font face="ＭＳ ゴシック">※Nota: Este documento está basado en material para la Z-1/FX-890P, por lo que no necesariamente todas las funciones aquí descritas serán válidas para la Z-1GR.<br>
 </font></p>
