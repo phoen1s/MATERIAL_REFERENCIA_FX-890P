@@ -8,7 +8,7 @@ Originalmente, la BIOS incorporada en la Z-1/FX-890P contiene más de 180 funcio
 ※Nota: Este documento está basado en material para la Z-1/FX-890P, por lo que no necesariamente todas las funciones aquí descritas serán válidas para la Z-1GR.<br>
 ...aunque probablemente las funciones que se presentarán a continuación no hayan sido modificadas.<br>
 </p>
-<p><font size="5"><u>１. Precauciones sobre el uso de la BIOS</u></font></p>
+## １. Precauciones sobre el uso de la BIOS
 
 <p>Básicamente, la BIOS se utiliza llamándola desde ensamblador mediante interrupción de software (INT 41H), pero hay varias precauciones a tener en cuenta en ese momento.</p>
 
@@ -18,7 +18,7 @@ Originalmente, la BIOS incorporada en la Z-1/FX-890P contiene más de 180 funcio
   <li>Si ocurre un error durante la comunicación RS-232C, se mostrará un error de BASIC y se interrumpirá el procesamiento (no se volverá al programa).
   <li>Si se presiona la tecla [BRK] durante la ejecución de funciones BIOS relacionadas con entrada de teclas, el procesamiento del programa se interrumpirá, a menos que se especifique lo contrario.<br>
 </ul>
-<p><font size="5"><u>２. Método de uso de la BIOS</u></font></p>
+## ２. Método de uso de la BIOS
 
 <p>Para ejecutar la BIOS, primero se establece el número de BIOS en el registro AH, luego se configuran los datos necesarios en los otros registros, y finalmente se ejecuta la interrupción de software 41H (INT 41H) para realizar el procesamiento específico.</p>
 <p>Ejemplo:</p>
@@ -49,7 +49,7 @@ Originalmente, la BIOS incorporada en la Z-1/FX-890P contiene más de 180 funcio
 </table>
 
 
-<p><font size="5"><u>３. Tabla de funciones de la BIOS</u></font></p>
+## ３. Tabla de funciones de la BIOS
 
 <p>A continuación se muestra una lista de números de BIOS y sus funciones en formato de tabla.<br>
 Los números que faltan corresponden a funciones no identificadas o que se consideraron de bajo valor de uso personal y no se incluyeron.</p>
@@ -104,7 +104,7 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
 </a><a href="#7f">7FH=Apagar alimentación<br>
 </a></p>
 
-<p><font size="5"><u>４. Detalles de funciones de la BIOS</u></font></p>
+## ４. Detalles de funciones de la BIOS
 
 <p>Se muestra el detalle de las condiciones de entrada/salida y el contenido del procesamiento de cada BIOS.</p>
 
@@ -1659,7 +1659,7 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
   </tbody>
 </table>
 
-<p><font size="5"><u>５. Sobre este documento</u></font></p>
+## ５. Sobre este documento
 
 <p>Este documento se ha elaborado tomando como referencia «Z-1/FX-890P Katsuyō Kenkyū (Kōgakusha)», corrigiendo algunos errores presentes en la obra original y añadiendo varias notas complementarias.<br>
 <br>
