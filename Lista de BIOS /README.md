@@ -668,12 +668,12 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       <td valign="top" width="33" align="right">Entrada</td>
       <td valign="top">:</td>
       <td>AH=13H<br>
-      BL=Coordenada X inicial (00H～BFH)<br>
-      BH=Coordenada Y inicial (00H～3FH)<br>
-      CL=Coordenada X final (00H～BFH)<br>
-      DH=Coordenada Y final (00H～3FH)<br>
-      DL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-        <pre>
+         <pre>
+      BL=Coordenada X inicial (00H～BFH)
+      BH=Coordenada Y inicial (00H～3FH)
+      CL=Coordenada X final (00H～BFH)
+      DH=Coordenada Y final (00H～3FH)
+      DL=b7 b6 b5 b4 b3 b2 b1 b0
        　 │  └───────── 0:Dibujar línea 1:Borrar línea
        　 └───────────- 0:Mostrar en LCD 1:No mostrar en LCD
         </pre>
