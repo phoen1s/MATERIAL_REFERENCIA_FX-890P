@@ -3,7 +3,7 @@
 　La Z-1/FX-890P tiene dos conectores para conectar circuitos externos: un conector de borde de tarjeta y un conector de 30 pines.
 Esta sección explica el conector de 30 pines.
 
-**1. Disposición de los pines**  
+## 1. Disposición de los pines
 
 　Las especificaciones del conector de 30 pines son compatibles con otras computadoras de bolsillo Casio (VX-3, VX-4, FX-870P).  
 
@@ -51,7 +51,7 @@ Esta sección explica el conector de 30 pines.
 ※ La dirección in/out indica el sentido de la señal visto desde el pocket computer.  <br><br> 
 
 
-**2. Características eléctricas**  
+## 2. Características eléctricas
 
 Los niveles de tensión son TTL  
 (HI = 5V / LOW = 0V)  
@@ -72,7 +72,7 @@ Es decir, el bus de direcciones y el bus de datos son válidos solo en el moment
 Por lo tanto, especialmente al enviar datos, puede ser necesario capturar (latch) el bus de datos en ese momento específico, dependiendo del caso.  
 Por cierto, el momento para enviar datos se obtiene mediante WE, y el momento para recibir datos se obtiene mediante OE  <br><br>  
   
-  **３. Entrada/Salida de Datos**  
+## ３. Entrada/Salida de Datos
 
 　
 Al manipular cada línea de señal desde un programa, básicamente se debe usar la BIOS. Específicamente, las funciones BIOS 02H, 2AH～2CH y 70H～71H están relacionadas con el conector de 30 pines.  
@@ -97,7 +97,7 @@ Para enviar datos a E/S con comandos BASIC, se usa la instrucción OUT.
 Ejemplo:  
 Para enviar el valor 12 a la dirección 0 del conector de 30p: OUT &H2C0, 12  
 
-**４. Sobre este documento**  
+## ４. Sobre este documento
 
 Este documento es una reedición editada de los artículos relacionados con el conector de 30 pines publicados en «Z-1/FX-890P Katsuyō Kenkyū (Kōgakusha)».  
 
