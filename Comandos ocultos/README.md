@@ -1,6 +1,6 @@
 ## Comandos Ocultos de BASIC
 
-<hr>
+
 
 　Existen varios comandos en la Z-1/FX-890P que no están documentados en el manual.<br>
 Aquí presentamos esos comandos ocultos.
