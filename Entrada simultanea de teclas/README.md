@@ -116,8 +116,8 @@ Para hacer posible esto, es necesario verificar directamente el estado de la mat
       <td style="padding: 4px; text-align: center;">0204H</td>
       <td style="padding: 4px;">
         KEYCTL<br>
-        b0 0のときキー割り込み禁止<br>
-        b1 1→0でキー割り込みクリア
+        •	b0: cuando es 0, se deshabilita la interrupción del teclado<br>
+	      •	b1: al cambiar de 1 → 0, se limpia (borra) la interrupción del teclado
       </td>
     </tr>
   </tbody>
