@@ -222,3 +222,29 @@ Por ejemplo, para verificar si la tecla "G" está presionada:
   </tbody>
 </table>
 
+AL = Estado de la tecla（0:OFF 1:ON）
+
+<table border="1" cellspacing="0" cellpadding="2" style="border-collapse: collapse; margin: 10px auto;">
+  <tbody align="center">
+    <tr>
+      <th style="padding: 6px; background-color: #C0C0C0; border: 1px solid black;">b7</th>
+      <th style="padding: 6px; background-color: #C0C0C0; border: 1px solid black;">b6</th>
+      <th style="padding: 6px; background-color: #C0C0C0; border: 1px solid black;">b5</th>
+      <th style="padding: 6px; background-color: #C0C0C0; border: 1px solid black;">b4</th>
+      <th style="padding: 6px; background-color: #C0C0C0; border: 1px solid black;">b3</th>
+      <th style="padding: 6px; background-color: #C0C0C0; border: 1px solid black;">b2</th>
+      <th style="padding: 6px; background-color: #C0C0C0; border: 1px solid black;">b1</th>
+      <th style="padding: 6px; background-color: #C0C0C0; border: 1px solid black;">b0</th>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid black; background-color: #FFFFFF;">BRK</td>
+      <td style="padding: 6px; border: 1px solid black; background-color: #EBEBFF;">↵</td>
+      <td style="padding: 6px; border: 1px solid black; background-color: #EBEBFF;">SHIFT</td>
+      <td style="padding: 6px; border: 1px solid black; background-color: #EBEBFF;">SPACE</td>
+      <td style="padding: 6px; border: 1px solid black; background-color: #EBEBFF;">8</td>
+      <td style="padding: 6px; border: 1px solid black; background-color: #EBEBFF;">6</td>
+      <td style="padding: 6px; border: 1px solid black; background-color: #EBEBFF;">4</td>
+      <td style="padding: 6px; border: 1px solid black; background-color: #EBEBFF;">2</td>
+    </tr>
+  </tbody>
+</table>
