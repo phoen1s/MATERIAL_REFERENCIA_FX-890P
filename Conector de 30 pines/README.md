@@ -48,7 +48,7 @@ Esta sección explica el conector de 30 pines.
 | 30 | GND | — | Tierra |
 
 </div>
-※ La dirección in/out indica el sentido de la señal visto desde el pocket computer.  <br><br> 
+※ La dirección in/out indica el sentido de la señal visto desde el pocket computer.  <br>
 
 ## 2. Características eléctricas
 
