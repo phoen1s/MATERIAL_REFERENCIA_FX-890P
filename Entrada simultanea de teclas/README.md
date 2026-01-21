@@ -121,7 +121,8 @@ Para hacer posible esto, es necesario verificar directamente el estado de la mat
       </td>
     </tr>
   </tbody>
-</table>
+</table>  
+
 ## <u>２．Matriz de Teclas</u>
 
 |       | KO0 | KO1 | KO2 | KO3 | KO4 | KO5 | KO6 | KO7 | KO8 | KO9 | KO10 | KOS |
