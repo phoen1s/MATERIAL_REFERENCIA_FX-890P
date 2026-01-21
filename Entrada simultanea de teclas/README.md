@@ -15,7 +15,7 @@ Para hacer posible esto, es necesario verificar directamente el estado de la mat
 <table border="1" style="background-color: #999999; border-collapse: collapse; margin: 20px 0;">
   <tbody>
     <tr>
-      <th style="padding: 4px; text-align: center;">DIRECCIÓN</th>
+      <th style="padding: 4px; text-align: center;">Address</th>
       <th style="padding: 4px; text-align: center;">CONTENIDO</th>
     </tr>
     <tr>
