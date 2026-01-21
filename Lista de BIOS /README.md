@@ -673,8 +673,11 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       CL=Coordenada X final (00H～BFH)<br>
       DH=Coordenada Y final (00H～3FH)<br>
       DL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-      　 │　　　　　　　　　 └─ 0:Dibujar línea 1:Borrar línea<br>
-      　 └───────────- 0:Mostrar en LCD 1:No mostrar en LCD</td>
+        <pre>
+       　 │  └───────── 0:Dibujar línea 1:Borrar línea
+       　 └───────────- 0:Mostrar en LCD 1:No mostrar en LCD
+        </pre>
+        </td>
     </tr>
     <tr>
       <td valign="top" width="33" align="right">Salida</td>
@@ -709,8 +712,11 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       CL=Coordenada X final (00H～BFH)<br>
       DH=Coordenada Y final (00H～3FH)<br>
       DL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-      　 │　　　　　　　　　 └─ 0:Dibujar rectángulo 1:Borrar rectángulo<br>
-      　 └───────────- 0:Mostrar en LCD 1:No mostrar en LCD</td>
+         <pre>
+       　 │  └───────── 0:Dibujar rectángulo 1:Borrar rectángulo
+       　 └───────────- 0:Mostrar en LCD 1:No mostrar en LCD
+         </pre>
+          </td>
     </tr>
     <tr>
       <td valign="top" width="33" align="right">Salida</td>
@@ -744,8 +750,11 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       BH=Coordenada Y del centro (00H～3FH)<br>
       CL=Radio (01H～BFH)<br>
       DL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-      　 │　　　　　　　　　 └─ 0:Dibujar círculo 1:Borrar círculo<br>
-      　 └───────────- 0:Mostrar en LCD 1:No mostrar en LCD</td>
+         <pre>
+       　 │  └──-─-─-─- 0:Dibujar círculo 1:Borrar círculo
+       　 └───────────- 0:Mostrar en LCD 1:No mostrar en LCD
+         </pre>
+          </td>
     </tr>
     <tr>
       <td valign="top" width="33" align="right">Salida</td>
@@ -1104,10 +1113,12 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       <td valign="top">:</td>
       <td>AH=2AH<br>
       BL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-      　　　　　　　 │ │ │ └─ INIT<br>
-      　　　　　　　 │ │ └──- STB<br>
-      　　　　　　　 │ └──── RTS<br>
-      　　　　　　　 └─────- DTR</td>
+        <pre>
+      　　　   　　　　 │  │  │  └─ INIT
+      　　　　　　   　 │  │  └───- STB
+      　　　　　   　　 │  └─────── RTS
+      　　　　   　　　 └─────────- DTR
+        </pre></td>
     </tr>
     <tr>
       <td valign="top" width="33" align="right">Salida</td>
@@ -1138,10 +1149,12 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       <td valign="top">:</td>
       <td>AH=2BH<br>
       BL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-      　　　　　　　 │ │ │ └─ INIT<br>
-      　　　　　　　 │ │ └──- STB<br>
-      　　　　　　　 │ └──── RTS<br>
-      　　　　　　　 └─────- DTR</td>
+        <pre>
+      　　　　　　   　 │  │  │  └─ INIT
+      　　　　　   　　 │  │  └──-- STB
+      　　　　   　　　 │  └─---─── RTS
+      　　　   　　　　 └───----──- DTR
+        </pre></td>
     </tr>
     <tr>
       <td valign="top" width="33" align="right">Salida</td>
@@ -1176,14 +1189,16 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       <td valign="top" width="33" align="right">Salida</td>
       <td valign="top">:</td>
       <td>BL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-      　 │ │ │ │ │ │ │ └─ BUSY<br>
-      　 │ │ │ │ │ │ └──- CD<br>
-      　 │ │ │ │ │ └──── DSR<br>
-      　 │ │ │ │ └─────- CTR<br>
-      　 │ │ │ └─────── INIT<br>
-      　 │ │ └────────- STB<br>
-      　 │ └────────── RTS<br>
-      　 └───────────- DTR</td>
+         <pre>
+           　 │  │  │  │  │  │  │  └─ BUSY
+      　      │  │  │  │  │  │  └───- CD
+      　      │  │  │  │  │  └───-─── DSR
+      　      │  │  │  │  └──-─-────- CTR
+      　      │  │  │  └─────-─-───── INIT
+      　      │  │  └──────-─-───-─-─ STB
+      　      │  └────────-─-─-────-─ RTS
+      　      └─────────-─-─-─-────-- DTR
+         </pre></td>
     </tr>
     <tr>
       <td valign="top" width="33" align="right">Función</td>
@@ -1280,8 +1295,7 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       <td valign="top">Retorna la dirección de desplazamiento donde se almacenan los datos de fuentes de caracteres definidos por usuario (códigos de carácter 252～255, caracteres definidos con "DEFCHR$").<br>
       La dirección de segmento está fijada en 0.<br>
       Las fuentes se almacenan en orden de códigos de carácter 252, 253, ..., 255, con un área de 8 bytes por carácter, 32 bytes en total.<br>
-      Nota: Hay un desplazamiento de 90° respecto a los datos especificados en "DEFCHR$".</td>
-      
+      Nota: Hay un desplazamiento de 90° respecto a los datos especificados en "DEFCHR$".</td>   
       <p>・・□■■■□□ = 1CH<br>
       ・・■□□□■□ = 22H<br>
       ・・■□□□■□ = 22H<br>
@@ -1289,8 +1303,7 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       ・・■□□□■□ = 22H<br>
       ・・■□□□■□ = 22H<br>
       ・・■□□□■□ = 22H<br>
-      ・・□□□□□□ = 00H</p>
-      
+      ・・□□□□□□ = 00H</p>      
       </td>
     </tr>
   </tbody>
