@@ -9,9 +9,9 @@ Originalmente, la BIOS incorporada en la Z-1/FX-890P contiene más de 180 funcio
 ...aunque probablemente las funciones que se presentarán a continuación no hayan sido modificadas.<br>
 </p>
 <p><font size="5"><u>１. Precauciones sobre el uso de la BIOS</u></font></p>
-<blockquote>
+
 <p>Básicamente, la BIOS se utiliza llamándola desde ensamblador mediante interrupción de software (INT 41H), pero hay varias precauciones a tener en cuenta en ese momento.</p>
-</blockquote>
+
 <ul>
   <li>Los registros SS y DS deben ser 0.
   <li>El contenido de los registros no especificados explícitamente en la salida se preserva.
@@ -19,10 +19,10 @@ Originalmente, la BIOS incorporada en la Z-1/FX-890P contiene más de 180 funcio
   <li>Si se presiona la tecla [BRK] durante la ejecución de funciones BIOS relacionadas con entrada de teclas, el procesamiento del programa se interrumpirá, a menos que se especifique lo contrario.<br>
 </ul>
 <p><font size="5"><u>２. Método de uso de la BIOS</u></font></p>
-<blockquote>
+
 <p>Para ejecutar la BIOS, primero se establece el número de BIOS en el registro AH, luego se configuran los datos necesarios en los otros registros, y finalmente se ejecuta la interrupción de software 41H (INT 41H) para realizar el procesamiento específico.</p>
 <p>Ejemplo:</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -47,10 +47,10 @@ Originalmente, la BIOS incorporada en la Z-1/FX-890P contiene más de 180 funcio
     </tr>
   </tbody>
 </table>
-</blockquote>
-</blockquote>
+
+
 <p><font size="5"><u>３. Tabla de funciones de la BIOS</u></font></p>
-<blockquote>
+
 <p>A continuación se muestra una lista de números de BIOS y sus funciones en formato de tabla.<br>
 Los números que faltan corresponden a funciones no identificadas o que se consideraron de bajo valor de uso personal y no se incluyeron.</p>
 <p><a href="#00">00H=Transición forzada al modo CAL</a><br>
@@ -103,13 +103,13 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
 </a><a href="#7e">7EH=Realizar reset P<br>
 </a><a href="#7f">7FH=Apagar alimentación<br>
 </a></p>
-</blockquote>
+
 <p><font size="5"><u>４. Detalles de funciones de la BIOS</u></font></p>
-<blockquote>
+
 <p>Se muestra el detalle de las condiciones de entrada/salida y el contenido del procesamiento de cada BIOS.</p>
-</blockquote>
+
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -134,9 +134,9 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -163,10 +163,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -192,10 +192,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -222,10 +222,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -252,10 +252,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -283,10 +283,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -332,10 +332,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -360,10 +360,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -391,10 +391,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -420,10 +420,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -448,10 +448,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -476,10 +476,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -504,10 +504,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -535,10 +535,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -563,10 +563,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -618,10 +618,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -651,10 +651,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -687,10 +687,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -723,10 +723,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -758,10 +758,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -787,10 +787,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -816,10 +816,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -844,10 +844,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -873,10 +873,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -903,10 +903,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -931,10 +931,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -963,10 +963,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -995,10 +995,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1025,10 +1025,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1055,10 +1055,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1086,10 +1086,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1120,10 +1120,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1154,10 +1154,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1191,10 +1191,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1222,10 +1222,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1251,10 +1251,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1279,7 +1279,7 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       La dirección de segmento está fijada en 0.<br>
       Las fuentes se almacenan en orden de códigos de carácter 252, 253, ..., 255, con un área de 8 bytes por carácter, 32 bytes en total.<br>
       Nota: Hay un desplazamiento de 90° respecto a los datos especificados en "DEFCHR$".</td>
-      <blockquote>
+      
       <p>・・□■■■□□ = 1CH<br>
       ・・■□□□■□ = 22H<br>
       ・・■□□□■□ = 22H<br>
@@ -1288,15 +1288,15 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       ・・■□□□■□ = 22H<br>
       ・・■□□□■□ = 22H<br>
       ・・□□□□□□ = 00H</p>
-      </blockquote>
+      
       </td>
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1322,10 +1322,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1351,10 +1351,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1380,10 +1380,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1410,10 +1410,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1439,10 +1439,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1471,10 +1471,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1502,10 +1502,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1532,10 +1532,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1562,10 +1562,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1591,10 +1591,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1620,10 +1620,10 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 
 <p>----------</p>
-<blockquote>
+
 <table border="0" cellspacing="1">
   <tbody>
     <tr>
@@ -1648,12 +1648,12 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
     </tr>
   </tbody>
 </table>
-</blockquote>
+
 <p><font size="5"><u>５. Sobre este documento</u></font></p>
-<blockquote>
+
 <p>Este documento se ha elaborado tomando como referencia «Z-1/FX-890P Katsuyō Kenkyū (Kōgakusha)», corrigiendo algunos errores presentes en la obra original y añadiendo varias notas complementarias.<br>
 <br>
 Además, por favor, no consulte el contenido de este documento con Kōgakusha ni con CASIO.<br>
 </p>
-</blockquote>
+
 
