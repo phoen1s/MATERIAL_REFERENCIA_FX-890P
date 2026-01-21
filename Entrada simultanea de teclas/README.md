@@ -12,173 +12,116 @@ Para hacer posible esto, es necesario verificar directamente el estado de la mat
 
 ## Tabla de Puertos de E/S
 
-<table border="1" style="background-color: #999999; border-collapse: collapse; margin: 20px 0; width: 100%;">
+<table border="1" style="background-color: #999999; border-collapse: collapse; margin: 20px 0;">
   <tbody>
     <tr>
-      <th style="padding: 6px; text-align: center; background-color: #C0C0C0;">DIRECCIÓN</th>
-      <th style="padding: 6px; text-align: center; background-color: #C0C0C0;">CONTENIDO</th>
+      <th style="padding: 4px; text-align: center;">DIRECCIÓN</th>
+      <th style="padding: 4px; text-align: center;">CONTENIDO</th>
     </tr>
     <tr>
-      <td style="padding: 8px; text-align: center; vertical-align: top; width: 70px;"><strong>0200H</strong></td>
-      <td style="padding: 8px;">
-        <strong>KO port (Key Out)</strong><br>
-        <!-- Tabla de bits en formato vertical compacto -->
-        <div style="margin: 8px 0; font-size: 0.85em;">
-          <table border="1" style="background-color: #999999; border-collapse: collapse; width: 100%;">
-            <tr style="background-color: #C0C0C0; text-align: center;">
-              <th style="padding: 2px; width: 20%;">Bits</th>
-              <th style="padding: 2px;">Función</th>
+      <td style="padding: 4px; text-align: center;">0200H</td>
+      <td style="padding: 4px;">
+        KO port (Key Out)<br>
+        <div style="text-align: center;">
+        <table cellspacing="0" style="background-color: #999999; border: 1px solid; border-collapse: collapse; margin: 8px auto;">
+          <tbody align="center">
+            <tr>
+              <th style="padding: 2px;">b15</th>
+              <th style="padding: 2px;">b14</th>
+              <th style="padding: 2px;">b13</th>
+              <th style="padding: 2px;">b12</th>
+              <th style="padding: 2px;">b11</th>
+              <th style="padding: 2px;">b10</th>
+              <th style="padding: 2px;">b9</th>
+              <th style="padding: 2px;">b8</th>
+              <th style="padding: 2px;">b7</th>
+              <th style="padding: 2px;">b6</th>
+              <th style="padding: 2px;">b5</th>
+              <th style="padding: 2px;">b4</th>
+              <th style="padding: 2px;">b3</th>
+              <th style="padding: 2px;">b2</th>
+              <th style="padding: 2px;">b1</th>
+              <th style="padding: 2px;">b0</th>
             </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b15-b13</strong></td>
-              <td style="padding: 3px;">- (no usado)</td>
+            <tr>
+              <td style="padding: 2px;">-</td>
+              <td style="padding: 2px;">-</td>
+              <td style="padding: 2px;">-</td>
+              <td style="padding: 2px;">DATA</td>
+              <td style="padding: 2px;">KOS</td>
+              <td style="padding: 2px;">KO10</td>
+              <td style="padding: 2px;">KO9</td>
+              <td style="padding: 2px;">KO8</td>
+              <td style="padding: 2px;">KO7</td>
+              <td style="padding: 2px;">KO6</td>
+              <td style="padding: 2px;">KO5</td>
+              <td style="padding: 2px;">KO4</td>
+              <td style="padding: 2px;">KO3</td>
+              <td style="padding: 2px;">KO2</td>
+              <td style="padding: 2px;">KO1</td>
+              <td style="padding: 2px;">KO0</td>
             </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b12</strong></td>
-              <td style="padding: 3px;">DATA</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b11</strong></td>
-              <td style="padding: 3px;">KOS</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b10</strong></td>
-              <td style="padding: 3px;">KO10</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b9</strong></td>
-              <td style="padding: 3px;">KO9</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b8</strong></td>
-              <td style="padding: 3px;">KO8</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b7</strong></td>
-              <td style="padding: 3px;">KO7</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b6</strong></td>
-              <td style="padding: 3px;">KO6</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b5</strong></td>
-              <td style="padding: 3px;">KO5</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b4</strong></td>
-              <td style="padding: 3px;">KO4</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b3</strong></td>
-              <td style="padding: 3px;">KO3</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b2</strong></td>
-              <td style="padding: 3px;">KO2</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b1</strong></td>
-              <td style="padding: 3px;">KO1</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b0</strong></td>
-              <td style="padding: 3px;">KO0</td>
-            </tr>
-          </table>
-        </div>
-      </td>
-    </tr> 
-    <!-- Fila 2: 0202H -->
-    <tr>
-      <td style="padding: 8px; text-align: center; vertical-align: top;"><strong>0202H</strong></td>
-      <td style="padding: 8px;">
-        <strong>KI port (Key In)</strong><br>
-        <!-- Tabla de bits en formato vertical compacto -->
-        <div style="margin: 8px 0; font-size: 0.85em;">
-          <table border="1" style="background-color: #999999; border-collapse: collapse; width: 100%;">
-            <tr style="background-color: #C0C0C0; text-align: center;">
-              <th style="padding: 2px; width: 20%;">Bits</th>
-              <th style="padding: 2px;">Función</th>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b15</strong></td>
-              <td style="padding: 3px;">KINT</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b14</strong></td>
-              <td style="padding: 3px;">SW</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b13-b12</strong></td>
-              <td style="padding: 3px;">0 (no usado)</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b11</strong></td>
-              <td style="padding: 3px;">KIS</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b10</strong></td>
-              <td style="padding: 3px;">0 (no usado)</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b9</strong></td>
-              <td style="padding: 3px;">KI9</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b8</strong></td>
-              <td style="padding: 3px;">KI8</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b7</strong></td>
-              <td style="padding: 3px;">KI7</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b6</strong></td>
-              <td style="padding: 3px;">KI6</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b5</strong></td>
-              <td style="padding: 3px;">KI5</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b4</strong></td>
-              <td style="padding: 3px;">KI4</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b3</strong></td>
-              <td style="padding: 3px;">KI3</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b2</strong></td>
-              <td style="padding: 3px;">KI2</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b1</strong></td>
-              <td style="padding: 3px;">KI1</td>
-            </tr>
-            <tr style="background-color: #FFFFFF;">
-              <td style="padding: 3px; text-align: center;"><strong>b0</strong></td>
-              <td style="padding: 3px;">KI0</td>
-            </tr>
-          </table>
+          </tbody>
+        </table>
         </div>
       </td>
     </tr>
-    <!-- Fila 3: 0204H -->
     <tr>
-      <td style="padding: 8px; text-align: center; vertical-align: top;"><strong>0204H</strong></td>
-      <td style="padding: 8px; background-color: #FFFFFF;">
-        <strong>KEYCTL (Control de Teclado)</strong><br><br>
-        <div style="margin-left: 10px;">
-          • <strong>b0:</strong> Cuando es 0 → Interrupción de teclado <strong>deshabilitada</strong><br>
-          • <strong>b1:</strong> 1→0 (flanco de bajada) → <strong>Borra/limpia</strong> la interrupción de teclado
-        </div>
+      <td style="padding: 4px; text-align: center;">0202H</td>
+      <td style="padding: 4px;">
+        KI port (Key In)<br>
+        <table cellspacing="0" style="background-color: #999999; border: 1px solid; border-collapse: collapse; margin: 8px ;">
+          <tbody align="center">
+            <tr>
+              <th style="padding: 2px;">b15</th>
+              <th style="padding: 2px;">b14</th>
+              <th style="padding: 2px;">b13</th>
+              <th style="padding: 2px;">b12</th>
+              <th style="padding: 2px;">b11</th>
+              <th style="padding: 2px;">b10</th>
+              <th style="padding: 2px;">b9</th>
+              <th style="padding: 2px;">b8</th>
+              <th style="padding: 2px;">b7</th>
+              <th style="padding: 2px;">b6</th>
+              <th style="padding: 2px;">b5</th>
+              <th style="padding: 2px;">b4</th>
+              <th style="padding: 2px;">b3</th>
+              <th style="padding: 2px;">b2</th>
+              <th style="padding: 2px;">b1</th>
+              <th style="padding: 2px;">b0</th>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">KINT</td>
+              <td style="padding: 2px;">SW</td>
+              <td style="padding: 2px;">0</td>
+              <td style="padding: 2px;">0</td>
+              <td style="padding: 2px;">KIS</td>
+              <td style="padding: 2px;">0</td>
+              <td style="padding: 2px;">KI9</td>
+              <td style="padding: 2px;">KI8</td>
+              <td style="padding: 2px;">KI7</td>
+              <td style="padding: 2px;">KI6</td>
+              <td style="padding: 2px;">KI5</td>
+              <td style="padding: 2px;">KI4</td>
+              <td style="padding: 2px;">KI3</td>
+              <td style="padding: 2px;">KI2</td>
+              <td style="padding: 2px;">KI1</td>
+              <td style="padding: 2px;">KI0</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 4px; text-align: center;">0204H</td>
+      <td style="padding: 4px;">
+        KEYCTL<br>
+        •	b0: cuando es 0, se deshabilita la interrupción del teclado<br>
+	      •	b1: al cambiar de 1 → 0, se limpia (borra) la interrupción del teclado
       </td>
     </tr>
   </tbody>
 </table>
-
 ## <u>２．Matriz de Teclas</u>
 
 |       | KO0 | KO1 | KO2 | KO3 | KO4 | KO5 | KO6 | KO7 | KO8 | KO9 | KO10 | KOS |
