@@ -295,11 +295,11 @@ Los números que faltan corresponden a funciones no identificadas o que se consi
       <td>06H=Abrir RS-232C</td>
     </tr>
     <tr>
-      <td valign="top" align="right">Entrada</td>
+      <td valign="top"  width="33" align="right">Entrada</td>
       <td valign="top">:</td>
       <td>AH=06H<br>
       BL=b7 b6 b5 b4 b3 b2 b1 b0<br>
-          │  │  │  │  └--┴--┴--┴- Velocidad (baudrate)<br>
+..........│..│..│..│..└--┴--┴--┴- Velocidad (baudrate)<br>
           │  │  │  │　　　　　　　　 0 0 0 0 : 75bps<br>
           │  │  │  │　　　　　　　　 0 0 0 1 : 150bps<br>
           │  │  │  │　　　　　　　　 0 0 1 0 : 300bps<br>
