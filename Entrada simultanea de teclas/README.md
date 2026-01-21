@@ -18,13 +18,10 @@ Para hacer posible esto, es necesario verificar directamente el estado de la mat
       <th style="padding: 6px; text-align: center; background-color: #C0C0C0;">DIRECCIÓN</th>
       <th style="padding: 6px; text-align: center; background-color: #C0C0C0;">CONTENIDO</th>
     </tr>
-    
-    <!-- Fila 1: 0200H -->
     <tr>
       <td style="padding: 8px; text-align: center; vertical-align: top; width: 70px;"><strong>0200H</strong></td>
       <td style="padding: 8px;">
         <strong>KO port (Key Out)</strong><br>
-        
         <!-- Tabla de bits en formato vertical compacto -->
         <div style="margin: 8px 0; font-size: 0.85em;">
           <table border="1" style="background-color: #999999; border-collapse: collapse; width: 100%;">
@@ -91,14 +88,12 @@ Para hacer posible esto, es necesario verificar directamente el estado de la mat
           </table>
         </div>
       </td>
-    </tr>
-    
+    </tr> 
     <!-- Fila 2: 0202H -->
     <tr>
       <td style="padding: 8px; text-align: center; vertical-align: top;"><strong>0202H</strong></td>
       <td style="padding: 8px;">
         <strong>KI port (Key In)</strong><br>
-        
         <!-- Tabla de bits en formato vertical compacto -->
         <div style="margin: 8px 0; font-size: 0.85em;">
           <table border="1" style="background-color: #999999; border-collapse: collapse; width: 100%;">
@@ -170,7 +165,6 @@ Para hacer posible esto, es necesario verificar directamente el estado de la mat
         </div>
       </td>
     </tr>
-    
     <!-- Fila 3: 0204H -->
     <tr>
       <td style="padding: 8px; text-align: center; vertical-align: top;"><strong>0204H</strong></td>
