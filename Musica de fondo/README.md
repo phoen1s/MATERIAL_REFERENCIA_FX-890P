@@ -10,8 +10,9 @@ Sin embargo, afortunadamente la FX-890P tiene un zumbador incorporado, por lo qu
 Básicamente asume que el BGM se hará en ensamblador (porque hacer BGM solo con BASIC es imposible), así que quienes no sepan ensamblador deberían estudiarlo primero.<br>
 Aquí se usa la FX-890P como ejemplo, pero probablemente métodos similares puedan usarse en otros modelos.</p>
 
-<p>※ <a href="file/BGMDOC.LZH">Programa de ejemplo</a></p>
-
+<p>※ <a href="https://github.com/phoen1s/MATERIAL_REFERENCIA_FX-890P/raw/main/Musica%20de%20fondo/BGMDOC.LZH">
+Programa de ejemplo
+</a></p>
 <p><font size="5"><u>1. ¿Qué es el "sonido"?</u></font></p>
 
 <p>Como es sabido, la naturaleza del "sonido" es la "vibración de un objeto".<br>
