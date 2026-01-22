@@ -7,7 +7,9 @@ Por lo tanto, como método para resolver estos problemas de una vez, se propone 
 Así que a continuación explicaré los métodos de operación del LCDC, entre otros.<br>
 Nota: Se omitirán las partes que se consideren menos importantes.</p>
 
-<p>※ <a href="file/FX-LCDC.LZH">Programa de ejemplo</a></p>
+<p>※ <a href="https://github.com/phoen1s/MATERIAL_REFERENCIA_FX-890P/raw/main/Metodo%20control%20LCD/FX-LCDC.LZH">
+Programa de ejemplo
+</a></p>
 
 ## 1. Método de operación del LCDC
 
