@@ -13,14 +13,15 @@ Aquí se usa la FX-890P como ejemplo, pero probablemente métodos similares pued
 <p>※ <a href="https://github.com/phoen1s/MATERIAL_REFERENCIA_FX-890P/raw/main/Musica%20de%20fondo/BGMDOC.LZH">
 Programa de ejemplo
 </a></p>
-<p><font size="5"><u>1. ¿Qué es el "sonido"?</u></font></p>
+
+## 1. ¿Qué es el "sonido"?
 
 <p>Como es sabido, la naturaleza del "sonido" es la "vibración de un objeto".<br>
 El período de esta vibración determina el tono, la amplitud determina el volumen, y los cambios en el período y la amplitud determinan el timbre. Manipular estos elementos es lo que comúnmente llamamos "tocar música", así que para hacer música con computadoras solo necesitamos saber cómo implementar estos 3 elementos.</p>
 
 <p>Lo que se explicará a continuación es sobre "tono" y "volumen", no sobre "timbre", pero esto puede lograrse manipulando "tono" y "volumen", así que experimenten por su cuenta.</p>
 
-<p><font size="5"><u>2. Produciendo tonos</u></font></p>
+## 2. Produciendo tonos
 
 <p>Antes de explicar cómo producir tonos, primero necesitamos saber cómo crear "vibración de un objeto", así que comenzaremos con eso.</p>
 
@@ -51,7 +52,7 @@ La relación entre frecuencia y período es:</p>
 <p>Así podemos conocer el período necesario para producir el tono deseado.<br>
 Luego, simplemente hacemos vibrar el altavoz piezoeléctrico según este período para producir el tono.</p>
 
-<p><font size="5"><u>3. ¿Cómo medir el período?</u></font></p>
+## 3. ¿Cómo medir el período?
 
 <p>Una vez que conocemos el período para cada tono, el siguiente problema es "cómo medir el período".<br>
 Esta parte es crucial, ya que de ella depende si el BGM puede implementarse o no.</p>
@@ -67,7 +68,7 @@ La FX-890P permite especificar el período de interrupción del temporizador, as
 Incluso si el período de interrupción fuera fijo, habría métodos.<br>
 Podríamos hacer de la reproducción musical el procesamiento principal y ejecutar el juego por interrupciones. Este método sacrificaría bastante la calidad de sonido, pero al menos permitiría implementar BGM.</p>
 
-<p><font size="5"><u>4. Interrupción de temporizador</u></font></p>
+## 4. Interrupción de temporizador
 
 <p>La FX-890P tiene 3 sistemas de temporizador, todos usados por el sistema de la Pocket Computer, por lo que usarlos hará que algunas funciones dejen de funcionar (aunque dependiendo del software, esto podría evitarse).<br>
 Esto no es gran problema durante la ejecución de código máquina, pero en BASIC podría causar bloqueos, así que tengan cuidado.</p>
@@ -121,7 +122,7 @@ IRET
 <p>El procesamiento de BGM puede dividirse en análisis de datos musicales y configuración del período, y operación del altavoz piezoeléctrico. Si estas operaciones toman mucho tiempo, la velocidad general de ejecución disminuirá, así que deberían ser lo más livianas posible.<br>
 Puntos importantes durante el procesamiento de interrupciones: al terminar, enviar 8000H a EOI (E/S 02H); tener cuidado con el flag de dirección al usar instrucciones de cadena; los segmentos no siempre son 0000H.</p>
 
-<p><font size="5"><u>5. ¿Cómo cambiar el volumen?</u></font></p>
+## 5. ¿Cómo cambiar el volumen?
 
 <p>Ahora podemos producir tonos, pero no debemos conformarnos solo con eso.<br>
 Sin poder cambiar el volumen, no es suficiente.<br>
@@ -149,7 +150,7 @@ OUT DX,AL ; Este es el truco
 <p>El ajuste de volumen se logra controlando el tiempo entre el primer OUT y el siguiente.<br>
 Sin embargo, este tiempo es muy sensible; incluso 1 ciclo de reloj hace una gran diferencia en el volumen, así que probablemente necesiten rutinas de sonido específicas para cada volumen para lograr diferencias claras.</p>
 
-<p><font size="5"><u>6. Duración de las notas</u></font></p>
+## 6. Duración de las notas
 
 <p>Ahora que saben cómo producir sonidos, hablemos sobre la duración del sonido.<br>
 Esto es obvio para quienes tienen conocimientos musicales, pero para quienes no, puede ser difícil, así que lo explicaré.</p>
@@ -161,7 +162,7 @@ Esto es obvio para quienes tienen conocimientos musicales, pero para quienes no,
 
 <p>En el procesamiento real, contando las veces que se produce el sonido se puede conocer la duración a partir del período y el conteo, pero quizás sea mejor calcularlo de antemano.</p>
 
-<p><font size="5"><u>7. ¿Cómo hacer reproducción múltiple?</u></font></p>
+## 7. ¿Cómo hacer reproducción múltiple?
 
 <p>Todas las explicaciones anteriores asumían sonido monofónico, pero también explicaré la reproducción múltiple... aunque me gustaría, nunca la he implementado realmente, así que solo explicaré la metodología.</p>
 
@@ -243,7 +244,7 @@ Cuando ocurra la siguiente interrupción, repetir desde "•".</p>
 
 <hr>
 
-<p><font size="5"><u>8. Ejemplo</u></font></p>
+## 8. Ejemplo
 
 <p>Como dice el refrán, "más vale una imagen que mil palabras", así que mostraré un ejemplo de cómo sería en un programa real.<br>
 "PLAY.ASM" incluido en el archivo es el programa de ejemplo.<br>
@@ -298,7 +299,7 @@ TEMPO,NOTE,LENGTH,NOTE,LENGTH,…,0FFH,0
 
 <p>Esto es solo un ejemplo, así que no se limiten por ello y experimenten con sus propias ideas.</p>
 
-<p><font size="5"><u>9. Finalmente</u></font></p>
+## 9. Finalmente
 
 <p>Bueno, he explicado rápidamente, ¿entendieron sobre la reproducción de BGM?<br>
 Puede que la explicación sobre interrupciones de temporizador sea demasiado breve, pero si explicara eso en detalle, no terminaría nunca, así que consulten libros especializados.</p>
