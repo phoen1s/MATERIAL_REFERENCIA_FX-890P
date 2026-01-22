@@ -135,8 +135,3 @@ Puede parecer incorrecto desde la perspectiva del estándar RS-232C, pero en rea
         En ese caso, limar un poco el plástico alrededor del puerto del conector de la computadora de bolsillo puede mejorar la situación.<br>La referencia es hasta que el plástico negro del conector quede expuesto.</li>
 </ul>
 
-## 5. Ejemplo de Construcción
-
-<p align="center"><font size="4"><u><img src="/web/20170825072324im_/http://stear.c.ooco.jp/fx890p/EX1.gif" width="300" height="249"> <img src="/web/20170825072324im_/http://stear.c.ooco.jp/fx890p/EX2.gif" width="330" height="248"></u></font></p>
-
-<p>　</p>
