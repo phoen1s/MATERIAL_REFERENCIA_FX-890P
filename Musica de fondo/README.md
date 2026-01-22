@@ -223,7 +223,7 @@ __|______||_||__|_|___|||_|___|_|_||_|__ Salida sintetizada
     <tr><td align="center">D</td><td align="right">9</td><td align="right">3</td></tr>
 </table>
 
-<p align="center">Período de interrupción: 6</p>
+<p>Período de interrupción: 6</p>
 
 <p>• Procesar producción de sonido para partes con tiempo 0 y añadir período al tiempo.</p>
 
