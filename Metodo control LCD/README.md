@@ -56,11 +56,11 @@ Dado que normalmente no se utilizan BUSY y STBY, se omite su explicación (estab
 </ul>
 <pre>
 b7　b6　b5　b4　b3　b2　b1　b0
-│　│　│　│　│　└─┴─┴─ DUTY（normalmente 101B）
-│　│　│　└─┴─────── ROS（normalmente 10B）
-│　│　└─────────── PON（normalmente 1B）
-│　└───────────── WLS
-└─────────────── INC
+ │　 │　 │　 │　 │　 └──┴───┴─ DUTY（normalmente 101B）
+ │　 │ 　│　 └───┴─────────── ROS（normalmente 10B）
+ │　 │ 　└────────────────── PON（normalmente 1B）
+ │　 └────────────────────── WLS
+ └────────────────────────── INC
 </pre>
 <p>INC: Dirección de incremento de dirección (0-dirección Y, 1-dirección X)<br>
 WLS: Selección de longitud de palabra (0-8 bits, 1-6 bits)</p>
