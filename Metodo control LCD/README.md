@@ -141,4 +141,24 @@ Presione cualquier tecla excepto [BRK] para finalizar.</p>
 
 ## 7. Referencias bibliográficas
 
+<div align="left">
+<table border="2" style="background-color: #000000; color: #FFFFFF; border-collapse: collapse; margin: 10px 0;">
+    <tr>
+        <td style="padding: 8px;"><strong>Z-1/FX-890P Katsuyō Kenkyū</strong><br>(Estudio y Aplicación de Z-1/FX-890P)</td>
+        <td align="center" style="padding: 8px;"><strong>Kōgakusha</strong><br>(Editorial Kōgakusha)</td>
+    </tr>
+    <tr>
+        <td style="padding: 8px;"><strong>Pocket Computer Journal '92 - Edición de Mayo</strong></td>
+        <td align="center" style="padding: 8px;"><strong>Kōgakusha</strong></td>
+    </tr>
+    <tr>
+        <td style="padding: 8px;"><strong>Z80 Machine Language Secret Book</strong><br>por Tōru Hidaka</td>
+        <td align="center" style="padding: 8px;"><strong>Tetsugaku Shuppan</strong><br>(Editorial Filosofía)</td>
+    </tr>
+    <tr>
+        <td style="padding: 8px;"><strong>Z-1 Language Introductory Book "Assembly Language Edition"</strong></td>
+        <td align="center" style="padding: 8px;"><strong>CASIO</strong></td>
+    </tr>
+</table>
+</div>
 
