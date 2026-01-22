@@ -1,4 +1,4 @@
-# Método de Control del Controlador LCD para FX-890P/Z-1 serie
+# Método de Control del Controlador LCD para FX-890P/Z-1
 
 
 <p>Al intentar crear juegos con gráficos completos en la serie Z-1/FX-890P (en adelante, Z-1), el problema principal es cómo mantener la velocidad.<br>
