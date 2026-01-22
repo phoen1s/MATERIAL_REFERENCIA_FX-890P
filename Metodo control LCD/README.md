@@ -21,11 +21,11 @@ Estos registros internos están conectados a la RAM principal, y sus direcciones
 Al leer o escribir en los registros internos, primero se establece en el "registro de dirección":</p>
 <pre>
 b7　b6　b5　b4　b3　b2　b1　b0
-│　│　│　│　│　└─┴─┴─ Número de registro
-│　│　│　└─┴─────── Sin usar (establecer como 0)
-│　│　└─────────── DISP
-│　└───────────── STBY
-└─────────────── BUSY
+ │　 │ 　│　 │ 　│　 └──┴───┴─ Número de registro
+ │　 │　 │　 └───┴─────────── Sin usar (establecer como 0)
+ │　 │　 └─────────────────── DISP
+ │ 　└─────────────────────── STBY
+ └─────────────────────────── BUSY
 </pre>
 <p>DISP: Encendido/apagado del LCD (1-encendido)</p>
 <p>Luego se leen o escriben los datos en "otros registros".<br>
